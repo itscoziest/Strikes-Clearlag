@@ -1,0 +1,25 @@
+clearlag:
+  enabled: true
+  clear_time: 600
+  warning_times: [180, 120, 60, 30, 3, 2, 1]
+
+  sounds:
+    countdown: block.note_block.bass
+    clear: entity.experience_orb.pickup
+    success: entity.player.levelup
+
+  messages:
+    help: "&eClear Lag Commands:"
+    help_now: "&7/cl now [world] &f- Clear dropped items in a specific world"
+    help_all: "&7/cl now all &f- Clear dropped items in all worlds"
+    invalid_command: "§cInvalid usage. Try /cl now [world|all]"
+    invalid_world: "§cThat world doesn't exist."
+    cleared_world: "✔️ Cleared lagging entities in %%world%%."
+    cleared_all: "✔️ Cleared all worlds!"
+    warning: "⚠️ Ground items will be cleared in {time}!"
+    clearing: "🧹 Clearing all ground items now!"
+    done: "✅ Cleared all lagging entities."
+
+  post_clear_commands:
+    - "say %player_name% helped clear!"
+    - "msg %player_name% Thank you for helping the server!"

@@ -1,0 +1,12 @@
+name: Strikes-Clearlag
+main: strikesclearlag.StrikesClearlag
+version: 1.0
+api-version: 1.20
+description: Minimal clearlag plugin with sounds, countdown, and per-player commands.
+
+commands:
+  cl:
+    description: Clear lag and control plugin
+    usage: /cl now [world|all] | /cl reload
+    permission: cl.admin
+    permission-message: §cYou don’t have permission to use this command.
